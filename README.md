@@ -1,5 +1,7 @@
 This repository contains benchmarks for the latest release of
-the [DFT-FE code](https://sites.google.com/umich.edu/dftfe), targetting the OLCF GPU machines. 
+the [DFT-FE code](https://sites.google.com/umich.edu/dftfe), targetting the OLCF GPU machines.
+
+Release branch: https://github.com/dftfeDevelopers/dftfe/tree/release1.2
 
 Current capablities of DFT-FE (release branch)
 ==========================================
