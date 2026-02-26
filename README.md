@@ -21,9 +21,9 @@ Current capablities of DFT-FE (release branch)
 
 The benchmarks are designed to cover most of the capabilities of the DFT-FE code. Please refer to the README file inside each benchmark directory for more detailed information regarding the benchmark, the associated accuracy studies, and any important notes for the user to setup similar or related calculations using DFT-FE.
 
-List and brief description of the examples
+List and brief description of the benchmarks
 ==========================================
 * **BCCMo**
 
-This example demonstrates a ground-state calculation with fully periodic boundary conditions on BCC Mo supercell with a mono-vacancy. Norm-conserving pseudopotential and PBE exchange correlation are used.
+This benchmark demonstrates a ground-state calculation with fully periodic boundary conditions on BCC Mo supercell with a mono-vacancy. Norm-conserving pseudopotential and PBE exchange correlation are used.
 
