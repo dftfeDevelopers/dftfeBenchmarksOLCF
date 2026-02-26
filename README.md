@@ -23,7 +23,7 @@ The benchmarks are designed to cover most of the capabilities of the DFT-FE code
 
 List and brief description of the benchmarks
 ==========================================
-* **BCCMo**
+* **benchmark1-BCCMo**
 
 This benchmark demonstrates a ground-state calculation with fully periodic boundary conditions on BCC Mo supercell with a mono-vacancy. Norm-conserving pseudopotential and PBE exchange correlation are used.
 
