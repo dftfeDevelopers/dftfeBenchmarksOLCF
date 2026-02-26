@@ -1,15 +1,6 @@
 set SOLVER MODE=GS
-
-subsection Geometry
-  set NATOMS=127
-  set NATOM TYPES=1
-  set ATOMIC COORDINATES FILE      = coordinates.inp
-  set DOMAIN VECTORS FILE = domainVectors.inp
-  subsection Optimization
-    set ION FORCE = true
-    set CELL STRESS=true
-  end
-end
+set USE GPU=true
+set WRITE STRUCTURE ENERGY FORCES DATA POST PROCESS = true
 
 subsection Boundary conditions
   set PERIODIC1                       = true
@@ -29,11 +20,24 @@ subsection Finite element mesh parameters
   set POLYNOMIAL ORDER = 7
   subsection Auto mesh generation parameters
     set MESH SIZE AROUND ATOM=2.0
+    set ATOM BALL RADIUS=10.0
   end
 end
 
+subsection Geometry
+  set NATOMS=431
+  set NATOM TYPES=1
+  set ATOMIC COORDINATES FILE      = coordinates.inp
+  set DOMAIN VECTORS FILE = domainVectors.inp
+  subsection Optimization
+    set ION FORCE = true
+    set CELL STRESS=true
+  end
+end
+
+
 subsection SCF parameters
-  set MIXING PARAMETER=0.5
+  set MIXING PARAMETER =0.5
   set MIXING METHOD= ANDERSON_WITH_KERKER
   set TEMPERATURE                      = 500
   set TOLERANCE                        = 5e-5
