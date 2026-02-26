@@ -3,7 +3,7 @@
 #SBATCH -J Mo6x
 #SBATCH -t 00:30:00
 #SBATCH -p batch
-#SBATCH -N 4
+#SBATCH -N 8
 #SBATCH --gpus-per-node 8
 #SBATCH --ntasks-per-gpu 1
 #SBATCH --gpu-bind closest
@@ -22,4 +22,4 @@ export LD_LIBRARY_PATH=$CRAY_LD_LIBRARY_PATH:$LD_LIBRARY_PATH
 
 export BASE=$WD/dftfe_release1.2/build/release/real
 
-srun -n 32 -c 7 --gpu-bind closest $BASE/dftfe parameterFile.prm > benchmarkOutput4Nodes
+srun -n 64 -c 7 --gpu-bind closest $BASE/dftfe parameterFile.prm > benchmarkOutput8Nodes
